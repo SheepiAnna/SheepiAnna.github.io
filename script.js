@@ -25,18 +25,22 @@ function getImage(objectClass) {
 		return "orange-06.png"
 	} else if(objectClass == "cow") {
 		return "cow-10.png"
+	} else if(objectClass == "zebra") {
+		return "zebra-11.png"
 	} else {
-        return "mouse_over.png"
+        return "mouse_over-09.png"
     }
 }
 
 function getSound(objectClass) {
     if(objectClass == "apple") {
-        return "hotdog.mp3"
+        return "Apple.m4a"
     } else if(objectClass == "banana") {
-        return ""
+        return "Banana.m4a"
 	} else if(objectClass == "cow") {
         return "Cow_Moo.mp3"
+	} else if(objectClass == "") {
+        return ""
     } else {
         return ""
     }
@@ -57,6 +61,8 @@ function classifyAndNext(model) {
             newClass = "orange"
 		} else if(pred.includes("cow")) {
             newClass = "cow"
+		} else if(pred.includes("zebra")) {
+            newClass = "zebra"
         } else {
             newClass = ""
         } 
