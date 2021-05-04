@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Invest in Suono </title>
+    <script src="http://iyawebdev.com/jqm.js"></script>
+<script src="http://iyawebdev.com/jqui.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="suonostyles.css">
+   <link rel="stylesheet" href="https://use.typekit.net/nzu2jwc.css">
+</head>
+    
+    <style>
+    
+        .img {
+            float: left;
+            margin-left: 50px;
+            overflow: hidden;
+            height: 290px;
+        }
+        hr{
+            clear: both;
+        }
+      #footer {
+        clear: both;
+        margin: auto;
+        bottom: 0px;
+    }
+        #container{
+            overflow: hidden;
+        }
+        #form{
+            float: left;
+            overflow: hidden;
+        }
+         #label {
+        font-weight: 500;
+        font-style: normal;
+        font-size: 15px; 
+        line-height: 28px;
+        color: #f7f9f9;
+        font-family: neue-kabel;
+        text-align: left;
+    } 
+    input[type='text'] {  
+        font-family: neue-kabel;
+        height: 30px;
+        width: 240px;
+        margin-bottom: 0px;
+        font-size: 18pt;
+    }
+
+    input[type='submit'] {  
+        font-family: neue-kabel;
+        height: 30px;
+        width: 140px;
+        margin-bottom: 0px;
+        font-size: 12pt;
+    }
+        
+    select[id='role'] {  
+        font-family: neue-kabel;
+        height: 30px;
+        width: 140px;
+        margin-bottom: 0px;
+        font-size: 12pt;
+    }
+    </style>
+    <script>
+        $(document).ready(function(){
+            
+            $("#submit").on("click", function(){
+                
+                alert("Thank you for submitting! We'll be in touch soon.")
+                
+            })
+//        $("#image1").slideUp(0);
+//        $("#image1").slideDown(2000);
+});
+    </script>
+    
+<body>
+
+<div id="navbar">
+<div class="navbuttonsdiv">
+    <div id="logo"> <a href="suonoshomepage.html"></a></div>
+           <a class="navbuttons" href="suonoshomepage.html">
+            HOME
+           </a>
+           <a class="navbuttons" href="aboutus.html">
+            ABOUT
+           </a>
+           <a class="navbuttons" href="contact.html">
+            CONTACT
+           </a>
+           <a class="navbuttons" href="team.html">
+            TEAM
+           </a>
+           <a class="navbuttons" href="invest.html">
+            INVEST
+           </a>
+     </div>
+    </div>
+            
+<div id="container">
+    
+    
+<h1>Investment Opportunity</h1>
+<div id="mission">
+<h4><em>When you invest in Suono, you arne't just investing in our product – you are investing in the future of sound. </em></h4></div>
+            <img id="image1" src="panels2.png" alt="sound panel" style="width:80%">
+
+   
+    <br><hr>
+
+    <h4 style="color: #43D3FE; margin-bottom: 0px;">Interested in investing?</h4>
+    <h5>Please let us know!</h5>
+
+    <div id="form"><form>
+    <label id="label">First Name</label>
+    <br>
+    <input id="name" type="text">
+    <br><br>
+    <label id="label">Last Name</label>
+    <br>
+    <input id="name" type="text">
+    <br><br>
+   
+    <label id="label">Email</label>
+    <br>
+    <input id="email" type="text">
+        
+    <br><br>
+        
+    <label id="label">You are a...</label>
+    <br>
+    <select id="role" name="role">
+    <option value="vs">VC</option>
+    <option value="angel">Angel Investor</option>
+    <option value="musician">Musician</option>
+    <option value="other">Other</option>
+  </select>
+    <br><br><br>
+
+    <input type="submit" id="submit" value="Submit!">            <br><br><br>
+
+    </form> </div>        <img src="panelpic3fsd.png" alt="panels" class="img"> <br><br>
+
+
+    
+    
+</div>    
+
+    <div id="footer"> Copyright 2021 Suono - IYA C7 Case Studies Spring</div>
+    
+</body>
+</html>
